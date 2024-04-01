@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+
+  <form action="/kayit-ol" method="post">
+    <table>
+      <tr>
+        <th>Adı:</th>
+        <td><input type="text" id="ad" name="ad" required></td>
+      </tr>
+      <tr>
+        <th>Soyadı:</th>
+        <td><input type="text" id="soyad" name="soyad" required></td>
+      </tr>
+      <tr>
+        <th>Hobiler:</th>
+        
+        <td>
+          <input type="checkbox" id="futbol" name="hobi" value="futbol">
+          <label for="futbol">Futbol</label>
+
+          <input type="checkbox" id="voleybol" name="hobi" value="voleybol">
+          <label for="voleybol">Voleybol</label>
+
+          <input type="checkbox" id="basketbol" name="hobi" value="basketbol">
+          <label for="basketbol">Basketbol</label>
+        </td>
+    </tr>
+      </tr>
+      <tr>
+        <th>Cinsiyet:</th>
+        <td>
+          <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+          <label for="erkek">Erkek</label>
+
+          <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+          <label for="kadin">Kadın</label>
+        </td>
+      </tr>
+      <tr>
+        <th>Profil Dosyası:</th>
+        <td><input type="file" id="profil_dosyasi" name="profil_dosyasi" accept="image/*"></td>
+      </tr>
+      <tr>
+        <th>İlçe:</th>
+        <td><input type="text" id="ilce" name="ilce" required></td>
+      </tr>
+      <tr>
+        <th>Doğum Tarihi:</th>
+        <td><input type="date" id="dogum_tarihi" name="dogum_tarihi" required></td>
+      </tr>
+      <tr>
+        <th>E-posta:</th>
+        <td><input type="email" id="eposta" name="eposta" required></td>
+      </tr>
+      <tr>
+        <th>Adres:</th>
+        <td><textarea id="adres" name="adres" rows="4" cols="50" required></textarea></td>
+      </tr>
+      <tr>
+        <th>Kişisel Site:</th>
+        <td><input type="url" id="site" name="site"></td>
+      </tr>
+      <tr>
+        <th>Telefon:</th>
+        <td><input type="tel" id="telefon" name="telefon" required></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><button type="submit">Kayıt Ol</button></td>
+      </tr>
+    </table>
+  </form>
+    
+</body>
+</html>

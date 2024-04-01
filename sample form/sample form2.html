@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu 2</title>
+  </head>
+  <body>
+    <h1>Kayıt Formu</h1>
+
+    <form action="/kayit-ol" method="post">
+      <table "width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 50%">
+              <h2>Kişisel Bilgiler</h2>
+              
+
+              <label for="ad">Adı:</label>
+              <input type="text" id="ad" name="ad" required />
+              <br />
+              <br />
+              <label for="soyad">Soyadı:</label>
+              <input type="text" id="soyad" name="soyad" required />
+              <br />
+              <br />
+              <label for="cinsiyet">Cinsiyet:</label>
+
+              <input type="radio" id="erkek" name="cinsiyet" value="erkek" />
+              <label for="erkek">Erkek</label>
+
+              <input type="radio" id="kadin" name="cinsiyet" value="kadin" />
+              <label for="kadin">Kadın</label>
+              <br />
+              <br />
+              <label for="dogum_tarihi">Doğum Tarihi:</label>
+              <input
+                type="date"
+                id="dogum_tarihi"
+                name="dogum_tarihi"
+                required
+              />
+                <h2>Hobiler</h2>
+
+              <input type="checkbox" id="futbol" name="hobi" value="futbol" />
+              <label for="futbol">Futbol</label>
+
+              <input
+                type="checkbox"
+                id="voleybol"
+                name="hobi"
+                value="voleybol"
+              />
+              <label for="voleybol">Voleybol</label>
+
+              <input
+                type="checkbox"
+                id="basketbol"
+                name="hobi"
+                value="basketbol"
+              />
+              <label for="basketbol">Basketbol</label>
+            </td>
+            <td style="width: 50%">
+              <h2>İletişim Bilgileri</h2>
+            
+
+              <label for="eposta">E-posta:</label>
+              <input type="email" id="eposta" name="eposta" required />
+              <br />
+              <br />
+              <label for="telefon">Telefon:</label>
+              <input type="tel" id="telefon" name="telefon" required />
+              <br />
+              <br />
+              <label for="adres">Adres:</label>
+              <br />
+              <br />
+              <textarea
+                id="adres"
+                name="adres"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><br />
+              <button type="submit">Kayıt Ol</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
